@@ -69,14 +69,6 @@
   body {
     font-size: 18px;
   }
-}
-
-/* Estilos para dispositivos com tela grande */
-@media screen and (min-width: 320px) {
-  body {
-    font-size: 14px;
-  }
-
   .card {
     width: 90%;
   }
@@ -94,4 +86,13 @@
     font-size: large;
     padding: 15px 15px 15px 15px;
   }
+}
+
+/* Estilos para dispositivos com tela grande */
+@media screen and (min-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+
+
 }
