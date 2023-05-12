@@ -14,13 +14,12 @@
   background-color: blueviolet;
   border: 0;
   border-radius: 5px;
-  box-shadow: 20px 20px 60px #706b6b, 
-  -20px -20px 60px #ffffff;
+  box-shadow: 20px 20px 60px #706b6b, -20px -20px 60px #ffffff;
 }
 .titulo {
   padding-bottom: 15px;
-} 
-.botao{
+}
+.botao {
   width: 100%;
   height: 2.3em;
   margin: 0.5em;
@@ -34,12 +33,12 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
- }
+}
 .botao:hover {
   color: black;
- }
+}
 .botao:after {
-  content: "";
+  content: '';
   background: white;
   position: absolute;
   z-index: -1;
@@ -49,32 +48,50 @@
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
   transition: all 0.5s;
- }
- 
- .botao:hover:after {
+}
+
+.botao:hover:after {
   transform: skewX(-45deg) scale(1, 1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
- }
-.input1{
-    width: 100%;
-    height: 30px ;
-    border-radius: 3px;
-    border: 0;
+}
+.input1 {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: 0;
 }
 .resultado {
-    padding-top: 30px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para dispositivos com tela grande */
+@media screen and (min-width: 320px) {
+  body {
+    font-size: 14px;
   }
 
-  @media screen and (max-width: 767px) {
-    body {
-      font-size: 14px;
-    }
+  .card {
+    width: 90%;
   }
-  
-  /* Estilos para dispositivos com tela grande */
-  @media screen and (min-width: 768px) {
-    body {
-      font-size: 18px;
-    }
+  .titulo {
+    align-items: center;
+    text-align: center;
+    padding-left: 12px;
   }
+  .botao {
+    width: 100%;
+    max-height: 40px;
+  }
+  .resultado {
+    padding-top: 30px;
+    font-size: large;
+    padding: 15px 15px 15px 15px;
+  }
+}
