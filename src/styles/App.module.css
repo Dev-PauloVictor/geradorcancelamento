@@ -63,6 +63,7 @@
 }
 .resultado {
   padding-top: 30px;
+  font-size: x-large;
 }
 
 @media screen and (max-width: 767px) {
